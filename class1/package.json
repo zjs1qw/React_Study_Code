@@ -1,0 +1,16 @@
+{
+  "name": "class1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.1.4"
+  },
+  "devDependencies": {}
+}
