@@ -21,37 +21,37 @@
  * ! 对上节代码的重写
  */
 
-// class MyButton extends React.Component {
-//     constructor(props) {
-//         super(props)
+class MyButton extends React.Component {
+    constructor(props) {
+        super(props)
 
-//         this.state = {
-//             openStatus: false
-//         }
-//     }
+        this.state = {
+            openStatus: false
+        }
+    }
 
-//     handleBtn = () => {
-//         this.setState({
-//             openStatus: !this.state.openStatus
-//         })
-//     }
+    handleBtn = () => {
+        this.setState({
+            openStatus: !this.state.openStatus
+        })
+    }
 
-//     render() {
-//         return (
-//             <div>
-//                 <p>{this.state.openStatus ? "开启" : "关闭"}</p>
-//                 <button onClick={this.handleBtn}>{this.state.openStatus ? "关闭" : "开启"}</button>
-//             </div>
-//         )
-//     }
-// }
+    render() {
+        return (
+            <div>
+                <p>{this.state.openStatus ? "开启" : "关闭"}</p>
+                <button onClick={this.handleBtn}>{this.state.openStatus ? "关闭" : "开启"}</button>
+            </div>
+        )
+    }
+}
 
-// ReactDOM.render(
-//     <MyButton />,
-//     document.getElementById("app")
-// )
+ReactDOM.render(
+    <MyButton />,
+    document.getElementById("app")
+)
 
-// const rEl = <h1 className="title">This is a Title</h1>
+const rEl = <h1 className="title">This is a Title</h1>
 
-// console.log(rEl);
+console.log(rEl);
 
