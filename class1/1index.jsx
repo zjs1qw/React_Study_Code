@@ -1,27 +1,27 @@
-// class MyButton extends React.Component {
-//     constructor(props) {
-//       super(props);
+class MyButton extends React.Component {
+    constructor(props) {
+        super(props);
 
-//       this.state = {
-//         openStatus: false,
-//       };
-//     }
-//     render() {
-//       return React.createElement(
-//         "div",
-//         {
-//            "data-tag": "div",
-//         },
-//         "This is my first React Experience"
-//       );
-//     }
-//   }
+        this.state = {
+            openStatus: false,
+        };
+    }
+    render() {
+        return React.createElement(
+            "div",
+            {
+                "data-tag": "div",
+            },
+            "This is my first React Experience"
+        );
+    }
+}
 
-//   ReactDOM.render(
-//     // 将虚拟节点转化为真实节点并放入容器中
-//     React.createElement(MyButton),
-//     document.getElementById("app")
-//   )
+ReactDOM.render(
+    // 将虚拟节点转化为真实节点并放入容器中
+    React.createElement(MyButton),
+    document.getElementById("app")
+)
 
 /**
  * ! 开关灯案例
