@@ -35,7 +35,9 @@ class Table extends React.Component {
                     </tr>
                 </thead>
                 <tbody>
-                    <TableBody bodyData={bodyData} />
+                    <tr>
+                        <TableBody bodyData={bodyData} />
+                    </tr>
                 </tbody>
             </table>
         )
@@ -68,12 +70,12 @@ class TableBody extends React.Component {
         const dataItem = bodyData.map((item) => {
             const ids = nanoid()
             return (
-                <tr key={ids}>
+                <React.Fragment key={ids}>
                     <td>{item.name}</td>
                     <td>{ids}</td>
                     <td>{item.id}</td>
                     <td>{item.age}</td>
-                </tr>
+                </React.Fragment>
             )
         })
 
